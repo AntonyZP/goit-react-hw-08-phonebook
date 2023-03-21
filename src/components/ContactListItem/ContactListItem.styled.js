@@ -1,26 +1,25 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 export const ContactWrapper = styled.li`
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding-bottom:20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
 `;
 
 export const ContactName = styled.p`
-margin: 0;
-margin-right: 20px;
-font-size: 28px;
-text-shadow: 1px 1px 0px lightgrey;
+  margin: 0;
+  margin-right: 20px;
+  font-size: 28px;
+  text-shadow: 1px 1px 0px lightgrey;
 `;
 
 export const ContactNumber = styled.span`
-margin: 0;
-margin-left: 150px;
-font-size: 20px;
-text-shadow: 1px 1px 0px lightgrey;
+  margin: 0;
+  margin-left: 150px;
+  font-size: 20px;
+  text-shadow: 1px 1px 0px lightgrey;
 `;
-
 
 export const DeleteButton = styled.button`
 margin-top: 20px;

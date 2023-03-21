@@ -4,11 +4,12 @@ import { Outlet } from 'react-router-dom';
 import { useAuth } from 'hooks';
 import { UserMenu } from '../UserMenu/UserMenu';
 import { AuthNav } from '../AuthNav/AuthNav';
+import { Section } from './Layout.styled';
 
 export const Layout = () => {
   const { isLoggedIn } = useAuth();
   return (
-    <div>
+    <Section>
       <header>
         <Navigation />
         {isLoggedIn ? <UserMenu /> : <AuthNav />}
@@ -16,6 +17,6 @@ export const Layout = () => {
       <Suspense fallback={<div>Loading...</div>}>
         <Outlet />
       </Suspense>
-    </div>
+    </Section>
   );
 };
