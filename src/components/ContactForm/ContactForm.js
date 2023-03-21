@@ -9,7 +9,7 @@ import {
   ErrorNote,
 } from './ContactForm.styled';
 import { useDispatch } from 'react-redux';
-import { addContact } from 'redux/operations';
+import { addContact } from 'redux/contacts/operations';
 
 export const ContactForm = () => {
   const dispatch = useDispatch();
@@ -20,8 +20,8 @@ export const ContactForm = () => {
   };
 
   const UserSchema = yup.object().shape({
-    name: yup.string().min(1).max(18).required(),
-    number: yup.string().min(5).max(18).required(),
+    name: yup.string().min(1).max(16).required(),
+    number: yup.string().min(5).max(16).required(),
   });
 
   return (
